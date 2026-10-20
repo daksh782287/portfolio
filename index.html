@@ -1,0 +1,181 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>DAKSH.EXE — Daksh Minhas | CSE Student & Developer</title><meta name="description" content="Portfolio of Daksh Minhas, second-year B.Tech CSE student at MIT Bengaluru (MAHE). C, Java, Python, hackathons."><meta name="color-scheme" content="dark light"><link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚀</text></svg>">
+<style>
+*{box-sizing:border-box;margin:0}
+:root{--bg:#05070f;--tx:#e6ecff;--mu:#93a0c4;--a:#38bdf8;--b:#8b5cf6;--c:#22d3ee;--card:rgba(18,26,54,.6);--bd:rgba(56,189,248,.3);box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+body[data-mode=recruiter]{--bg:#fafafa;--tx:#14181f;--mu:#566070;--a:#2563eb;--b:#2563eb;--c:#2563eb;--card:#fff;--bd:#dfe4ec}
+body.arcade{--a:#ff2bd6;--b:#ffe600;--c:#00ff9c}
+html{scroll-behavior:smooth;scroll-padding-top:calc(70px + env(safe-area-inset-top,0px))}
+body{background:var(--bg);color:var(--tx);font:16px/1.6 system-ui,-apple-system,"Segoe UI",sans-serif;overflow-x:hidden;transition:background .5s,color .5s}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:60;background:var(--bg)}
+body[data-mode=recruiter] .g,body[data-mode=gamer] .r{display:none!important}
+.mono,code,pre,.btn{font-family:ui-monospace,"Cascadia Code",Menlo,Consolas,monospace}
+.grid{position:fixed;inset:0;z-index:-2;background:linear-gradient(var(--bd) 1px,transparent 1px) 0 0/48px 48px,linear-gradient(90deg,var(--bd) 1px,transparent 1px) 0 0/48px 48px;opacity:.18;mask-image:radial-gradient(ellipse at 50% 30%,#000,transparent 75%)}
+#bg{position:fixed;inset:0;z-index:-1;width:100%;height:100%}
+#pg{position:fixed;top:env(safe-area-inset-top,0px);left:0;height:3px;width:0;background:linear-gradient(90deg,var(--a),var(--b));z-index:70}
+#ld{position:fixed;inset:0;background:#05070f;z-index:100;display:grid;place-items:center;transition:opacity .5s;color:#38bdf8;font-family:ui-monospace,Menlo,monospace;text-align:center}
+#ld i{display:block;height:3px;margin-top:14px;background:linear-gradient(90deg,#38bdf8,#8b5cf6);animation:ld 1.3s forwards}
+@keyframes ld{from{width:0}to{width:100%}}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;display:flex;align-items:center;gap:12px;padding:12px 5vw;background:color-mix(in srgb,var(--bg) 82%,transparent);backdrop-filter:blur(12px);border-bottom:1px solid var(--bd)}
+header b{font:700 18px ui-monospace,Menlo,monospace}header b span{color:var(--a)}
+nav{display:flex;gap:2px;margin-left:auto;overflow-x:auto;scrollbar-width:none}
+nav a{color:var(--mu);text-decoration:none;padding:6px 10px;border-radius:8px;font-size:14px;white-space:nowrap}
+nav a:hover,nav a.on{color:var(--tx);background:color-mix(in srgb,var(--a) 16%,transparent)}
+.btn{background:transparent;color:var(--tx);border:1px solid var(--a);padding:9px 16px;border-radius:10px;cursor:pointer;font-size:14px;text-decoration:none;display:inline-block;transition:.2s}
+.btn:hover{background:var(--a);color:#05070f;transform:translateY(-2px)}
+.btn.p{background:linear-gradient(90deg,var(--a),var(--b));color:#fff;border-color:transparent}
+:focus-visible{outline:2px solid var(--c);outline-offset:2px}
+section{padding:80px 5vw;max-width:1100px;margin:auto}
+h1{font-size:clamp(2.2rem,7vw,4.4rem);line-height:1.05;letter-spacing:-.02em}
+h2{font-size:clamp(1.6rem,4vw,2.3rem);margin-bottom:24px}
+body[data-mode=gamer] h1,body[data-mode=gamer] h2{text-shadow:0 0 24px color-mix(in srgb,var(--a) 55%,transparent)}
+.card{background:var(--card);border:1px solid var(--bd);border-radius:16px;padding:20px;transition:.25s}
+body[data-mode=gamer] .card{backdrop-filter:blur(12px);box-shadow:0 0 28px -12px var(--a)}
+.card:hover{transform:translateY(-4px);border-color:var(--a)}
+.cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px}
+.mu{color:var(--mu)}
+.hero{display:grid;grid-template-columns:1.2fr 1fr;gap:30px;align-items:center;min-height:80vh}
+#rot{font:18px ui-monospace,Menlo,monospace;color:var(--c);min-height:30px;margin:14px 0 22px}
+.row{display:flex;flex-wrap:wrap;gap:10px}
+.desk{perspective:900px}.desk .card{transform:rotateY(-14deg) rotateX(6deg);transition:transform .2s;font:13px/1.7 ui-monospace,Menlo,monospace}
+.fl{position:absolute;font:700 28px ui-monospace,monospace;color:var(--b);opacity:.5;animation:fl 6s ease-in-out infinite}
+@keyframes fl{50%{transform:translateY(-18px) rotate(8deg)}}
+pre{background:#0008;color:#d7e3ff;padding:12px;border-radius:10px;overflow-x:auto;font-size:13px;margin:10px 0}
+body[data-mode=recruiter] pre{background:#f0f3f8;color:#14181f}
+.out{color:var(--c);font:13px ui-monospace,monospace;min-height:20px;white-space:pre-wrap}
+[contenteditable]{border-bottom:1px dashed var(--bd);outline:none;display:block;min-height:1.4em}
+[contenteditable]:focus{border-color:var(--a)}
+label.f{font-size:12px;color:var(--mu);display:block;margin-top:10px}
+.tl{border-left:2px solid var(--bd);padding-left:18px}.tl p{margin-bottom:14px}
+details summary{cursor:pointer;color:var(--a);margin-top:10px}
+.ph{height:90px;border:1px dashed var(--bd);border-radius:10px;display:grid;place-items:center;color:var(--mu);font-size:12px;margin:10px 0}
+canvas.gm{background:#02040a;border:1px solid var(--a);border-radius:12px;max-width:100%;touch-action:none;box-shadow:0 0 24px -6px var(--a)}
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px}.tabs .btn.on{background:var(--a);color:#05070f}
+#gm>div{display:none}#gm>div.on{display:block}
+.stat{display:flex;gap:18px;flex-wrap:wrap;margin:10px 0;font:14px ui-monospace,monospace}
+.dp{display:grid;grid-template-columns:repeat(3,52px);gap:6px;margin:10px 0}.dp .btn{padding:10px 0}
+#tx{width:100%;padding:12px;background:#0006;color:var(--tx);border:1px solid var(--bd);border-radius:10px;font:15px ui-monospace,monospace}
+#tt{font:18px/1.8 ui-monospace,Menlo,monospace;margin:14px 0;word-break:break-all}#tt .ok{color:var(--c)}#tt .bad{background:#f43f5e55;color:#fda4af}#tt .cur{border-bottom:2px solid var(--a)}#tt span{color:var(--mu)}#tt .ok,#tt .bad{color:inherit}#tt .ok{color:var(--c)}
+#mm{display:grid;gap:8px;max-width:420px}.mc{aspect-ratio:1;perspective:600px;cursor:pointer;background:none;border:0;padding:0}
+.ci{position:relative;width:100%;height:100%;transform-style:preserve-3d;transition:transform .4s}.mc.f .ci,.mc.d .ci{transform:rotateY(180deg)}
+.ci>*{position:absolute;inset:0;display:grid;place-items:center;border-radius:10px;backface-visibility:hidden;border:1px solid var(--a);font:700 20px ui-monospace,monospace}
+.ci>:first-child{background:var(--card)}.ci>:last-child{transform:rotateY(180deg);background:color-mix(in srgb,var(--a) 22%,#05070f);color:#fff}.mc.d .ci>:last-child{box-shadow:0 0 16px var(--c)}
+.bd{display:flex;gap:8px;flex-wrap:wrap}.bd span{padding:8px 12px;border:1px solid var(--bd);border-radius:10px;font-size:13px;opacity:.4}.bd span.on{opacity:1;border-color:var(--c);box-shadow:0 0 14px -4px var(--c)}
+input,textarea{width:100%;padding:11px;margin:4px 0;background:transparent;color:var(--tx);border:1px solid var(--bd);border-radius:10px;font:inherit}
+.er{color:#f43f5e;font-size:12px;min-height:16px}
+#tm{position:fixed;right:4vw;bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:55;width:min(520px,92vw);display:none;background:#05070fee;border:1px solid var(--a);border-radius:14px;color:#d7e3ff;font:13px/1.6 ui-monospace,Menlo,monospace;box-shadow:0 0 30px -6px var(--a)}
+#tm.on{display:block}#to{height:230px;overflow:auto;padding:12px;white-space:pre-wrap}#tm form{display:flex;border-top:1px solid var(--bd);padding:8px 12px;gap:6px}#ti{border:0;margin:0;padding:0;color:#fff}
+#tb{position:fixed;right:4vw;bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:54}
+#ts{position:fixed;left:50%;top:calc(76px + env(safe-area-inset-top,0px));transform:translateX(-50%);background:var(--card);border:1px solid var(--c);padding:10px 16px;border-radius:12px;z-index:80;display:none;max-width:90vw;backdrop-filter:blur(10px)}
+#go{position:fixed;inset:0;z-index:90;background:#05070f;color:#f43f5e;display:none;place-items:center;text-align:center;font-family:ui-monospace,monospace}
+#cur{position:fixed;width:18px;height:18px;border:2px solid var(--a);border-radius:50%;pointer-events:none;z-index:99;transform:translate(-50%,-50%);transition:width .15s,height .15s;display:none}
+@media(pointer:fine){body[data-mode=gamer]{cursor:none}body[data-mode=gamer] a,body[data-mode=gamer] button{cursor:none}body[data-mode=gamer] #cur{display:block}}
+@media(max-width:760px){.hero{grid-template-columns:1fr;min-height:0}.desk{display:none}header b{display:none}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+</style></head><body data-mode="gamer">
+<div id="ld"><div><p>INITIALIZING DAKSH.EXE</p><i></i></div></div><div id="pg"></div><div class="grid g"></div><canvas id="bg" class="g" aria-hidden="true"></canvas><div id="cur" class="g"></div><div id="ts" role="status"></div>
+<div id="go"><div><h1>GAME OVER</h1><p>404 — that page doesn't exist.</p><br><a class="btn" href="#home" id="gb">Continue ▸ Home</a></div></div>
+<header><b>DAKSH<span>.EXE</span></b><nav id="nav" aria-label="Sections"></nav><button id="mode" class="btn" aria-pressed="true"></button></header>
+<main>
+<section id="home" class="hero"><div><p class="mono g" style="color:var(--a)">&gt; system online</p><h1>HEY, I'M DAKSH MINHAS</h1><p class="mu" style="margin-top:10px">Computer Science Student | Developer | Problem Solver</p><p id="rot" aria-live="off"></p>
+<div class="row"><a class="btn p" href="#about">Explore My Universe</a><a class="btn" href="#projects">View My Projects</a><a class="btn g" href="#arcade">Enter Developer Arcade</a><button class="btn r" data-res>Download Resume</button></div></div>
+<div class="desk g" style="position:relative"><span class="fl" style="left:-6%;top:-10%">{ }</span><span class="fl" style="right:2%;top:-14%;animation-delay:-2s">&lt;/&gt;</span><span class="fl" style="right:-4%;bottom:-12%;animation-delay:-4s">#</span>
+<div class="card"><span style="color:var(--c)">daksh@universe:~$</span> whoami<br>Daksh Minhas<br><span style="color:var(--c)">daksh@universe:~$</span> langs<br>C · Java · Python<br><span style="color:var(--c)">daksh@universe:~$</span> <span id="cr">▮</span></div></div></section>
+<section id="about"><h2>About me</h2><div class="cols"><div class="card"><p>I'm a second-year B.Tech Computer Science and Engineering student at MIT Bengaluru (MAHE). I'm passionate about programming, software development, learning new technologies and taking part in hackathons.</p></div><div class="card tl" id="tl"></div></div></section>
+<section id="skills"><h2>Skills</h2><div class="cols" id="sk"></div></section>
+<section id="hackathons"><h2>Hackathon journey</h2><p class="mu" style="margin-bottom:14px">Click any dashed field to edit. Changes save in this browser only.</p><div class="cols tl" id="hk"></div></section>
+<section id="projects"><h2>Projects</h2><div class="cols" id="pj"></div></section>
+<section id="arcade" class="g"><h2>DAKSH ARCADE</h2><div class="tabs" id="tabs"></div><div id="gm">
+<div id="g0"><div class="stat"><span>Score <b id="ss">0</b></span><span>Best <b id="sh">0</b></span></div><canvas id="sn" class="gm" width="300" height="300" aria-label="Snake game"></canvas><p class="mu" style="font-size:13px">Arrows / WASD to steer. Space or button to start.</p><div class="dp"><span></span><button class="btn" data-d="u">▲</button><span></span><button class="btn" data-d="l">◀</button><button class="btn" data-d="d">▼</button><button class="btn" data-d="r">▶</button></div><button class="btn p" id="sb">Start / Restart</button><p id="sm" class="out"></p></div>
+<div id="g1"><div class="tabs" id="tc"></div><div class="stat"><span>Time <b id="tt1">0</b>s</span><span>WPM <b id="tw">0</b></span><span>Accuracy <b id="ta">100</b>%</span><span>Best <b id="tbst">–</b></span></div><div id="tt"></div><input id="tx" autocomplete="off" autocapitalize="off" spellcheck="false" aria-label="Type the code here" placeholder="Start typing to begin…"><p id="tr" class="out"></p><button class="btn" id="trs">Restart</button></div>
+<div id="g2"><div class="tabs" id="mc"></div><div class="stat"><span>Time <b id="mt">0</b>s</span><span>Moves <b id="mv">0</b></span><span>Best <b id="mb">–</b></span></div><div id="mm"></div><p id="mr" class="out"></p></div></div>
+<h2 style="margin-top:40px;font-size:1.3rem">Achievements</h2><div class="bd" id="bd"></div></section>
+<section id="contact"><h2>Contact</h2><div class="cols"><div class="card" id="ln"></div><form class="card" id="fm" novalidate><label for="n1">Name</label><input id="n1"><div class="er" id="e1"></div><label for="n2">Email</label><input id="n2" type="email"><div class="er" id="e2"></div><label for="n3">Message</label><textarea id="n3" rows="4"></textarea><div class="er" id="e3"></div><button class="btn p">Open in email app</button><p class="mu" style="font-size:12px;margin-top:8px">No server is connected, so nothing is sent from this page. This opens a draft in your email app.</p></form></div></section>
+</main><button id="tb" class="btn g" aria-label="Open terminal (press ` or Ctrl+K)">&gt;_ terminal</button>
+<div id="tm" class="g" role="dialog" aria-label="Developer terminal"><div id="to" aria-live="polite"></div><form><span style="color:#22d3ee">$</span><input id="ti" autocomplete="off" aria-label="Command" placeholder="type help"></form></div>
+<script>
+setTimeout(()=>{const l=document.getElementById('ld');l&&l.remove()},4000);
+const $=(s,e=document)=>e.querySelector(s),$$=(s,e=document)=>[...e.querySelectorAll(s)];
+const LS={get(k,d){try{const v=localStorage.getItem(k);return v==null?d:JSON.parse(v)}catch(e){return d}},set(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}}};
+const RM=matchMedia('(prefers-reduced-motion:reduce)').matches;
+/* ===== CONFIG: fill these in ===== */
+const CFG={RESUME_URL:"",GITHUB:"",LINKEDIN:"",EMAIL:""};
+const D={skills:[{n:"C",i:"⚙️",c:'#include <stdio.h>\nint main(){\n  printf("Hello, universe!\\n");\n  return 0;\n}',o:"Hello, universe!"},{n:"Java",i:"☕",c:'public class Main {\n  public static void main(String[] a){\n    System.out.println("Hello, universe!");\n  }\n}',o:"Hello, universe!"},{n:"Python",i:"🐍",c:'for i in range(3):\n    print("Hello, universe!", i)',o:"Hello, universe! 0\nHello, universe! 1\nHello, universe! 2"}],
+hack:["HackSprint","Smart India Hackathon"],fields:["Project idea","Technologies used","My contribution","Lessons learned"],
+proj:["Project One","Project Two","Project Three"]};
+const SEC=[["home","Home"],["about","About"],["skills","Skills"],["hackathons","Hackathons"],["projects","Projects"],["arcade","Arcade",1],["contact","Contact"]];
+const ACH={first:["🎮 First Game","Play any arcade game"],type:["⌨️ Code Typist","Finish a typing challenge"],mem:["🧠 Memory Master","Win Memory Matrix"],explore:["🧭 Explorer","Visit every section"],secret:["🔓 Hacker","Find the hidden command"]};
+function toast(t){const e=$('#ts');e.textContent=t;e.style.display='block';clearTimeout(toast.t);toast.t=setTimeout(()=>e.style.display='none',2600)}
+function unlock(id){const a=LS.get('ach',[]);if(a.includes(id))return;a.push(id);LS.set('ach',a);toast('Achievement unlocked: '+ACH[id][0]);badges()}
+function badges(){const a=LS.get('ach',[]);$('#bd').innerHTML=Object.entries(ACH).map(([k,v])=>`<span class="${a.includes(k)?'on':''}" title="${v[1]}">${v[0]}</span>`).join('')}
+const go=id=>{const e=$('#'+id);e&&e.scrollIntoView({behavior:RM?'auto':'smooth'})};
+/* mode */
+function setMode(m){document.body.dataset.mode=m;LS.set('mode',m);const g=m==='gamer';$('#mode').textContent=g?'🎮 GAMER MODE':'💼 RECRUITER MODE';$('#mode').setAttribute('aria-pressed',g);$('#nav').innerHTML=SEC.filter(s=>g||!s[2]).map(s=>`<a href="#${s[0]}">${s[1]}</a>`).join('')}
+$('#mode').onclick=()=>setMode(document.body.dataset.mode==='gamer'?'recruiter':'gamer');
+/* render shared data */
+$('#tl').innerHTML=[["Now","2nd-year B.Tech CSE, MIT Bengaluru (MAHE)"],["Languages","C, Java, Python"],["Hackathons","HackSprint, Smart India Hackathon"],["Interests","Software development, problem solving, emerging technologies"]].map(x=>`<p><b>${x[0]}</b><br><span class="mu">${x[1]}</span></p>`).join('');
+$('#sk').innerHTML=D.skills.map((s,i)=>`<div class="card"><h3>${s.i} ${s.n}</h3><pre><code>${s.c.replace(/</g,'&lt;')}</code></pre><button class="btn" data-run="${i}">▶ Run</button><div class="out" id="o${i}"></div></div>`).join('');
+$$('[data-run]').forEach(b=>b.onclick=()=>{const o=$('#o'+b.dataset.run);o.textContent='';const t=D.skills[b.dataset.run].o;let i=0;const f=()=>{o.textContent=t.slice(0,++i);i<t.length&&setTimeout(f,RM?0:25)};f()});
+const ed=(k,ph)=>`<div contenteditable="true" data-k="${k}" data-p="${ph}" role="textbox"></div>`;
+$('#hk').innerHTML=D.hack.map((h,i)=>`<div class="card"><h3>${h}</h3><div class="ph">[ image placeholder ]</div>${D.fields.map(f=>`<label class="f">${f}</label>${ed('h'+i+f,'Click to add…')}`).join('')}<label class="f">GitHub link</label>${ed('h'+i+'gh','https://github.com/…')}</div>`).join('');
+$('#pj').innerHTML=D.proj.map((p,i)=>`<div class="card"><span class="mu" style="font-size:12px">[PLACEHOLDER]</span><h3>${p}</h3>${ed('p'+i+'d','Click to describe…')}<label class="f">Tech stack</label>${ed('p'+i+'t','e.g. Python, Java…')}<details><summary>Details</summary><div class="ph">[ screenshot placeholder ]</div><label class="f">GitHub repository</label>${ed('p'+i+'g','https://github.com/…')}<label class="f">Live demo</label>${ed('p'+i+'l','https://…')}</details></div>`).join('');
+$$('[contenteditable]').forEach(e=>{const k='ed_'+e.dataset.k,v=LS.get(k,'');e.textContent=v;e.oninput=()=>LS.set(k,e.textContent);e.setAttribute('aria-label',e.dataset.p);e.addEventListener('focus',()=>{});});
+const st=document.createElement('style');st.textContent='[contenteditable]:empty::before{content:attr(data-p);color:var(--mu)}';document.head.append(st);
+const L=(u,t,k)=>u?`<p><a class="btn" href="${u}" target="_blank" rel="noopener">${t}</a></p>`:`<p><button class="btn" data-miss="${k}">${t}</button></p>`;
+$('#ln').innerHTML=`<h3>Find me</h3><br>${L(CFG.GITHUB,'GitHub','GITHUB')}${L(CFG.LINKEDIN,'LinkedIn','LINKEDIN')}${L(CFG.EMAIL&&'mailto:'+CFG.EMAIL,'Email','EMAIL')}<p><button class="btn" data-res>Download Resume</button></p>`;
+document.addEventListener('click',e=>{const m=e.target.closest('[data-miss]');if(m)toast('Add your '+m.dataset.miss+' in the CFG object at the top of the script.');const r=e.target.closest('[data-res]');if(r){if(CFG.RESUME_URL)window.open(CFG.RESUME_URL,'_blank');else toast('Resume not set yet: add RESUME_URL in CFG.')}});
+$('#fm').onsubmit=e=>{e.preventDefault();const n=$('#n1').value.trim(),m=$('#n2').value.trim(),b=$('#n3').value.trim();$('#e1').textContent=n?'':'Enter your name.';$('#e2').textContent=/^\S+@\S+\.\S+$/.test(m)?'':'Enter a valid email address.';$('#e3').textContent=b.length>=10?'':'Message needs at least 10 characters.';if(n&&/^\S+@\S+\.\S+$/.test(m)&&b.length>=10){if(!CFG.EMAIL)return toast('Set EMAIL in CFG to enable this form.');location.href=`mailto:${CFG.EMAIL}?subject=${encodeURIComponent('Portfolio message from '+n)}&body=${encodeURIComponent(b+'\n\n'+m)}`}};
+/* hero rotation, progress, reveal, explore */
+const RT=["I turn ideas into code.","I love solving complex problems.","Building my future, one line at a time.","Welcome to my digital universe."];let ri=0;const rot=$('#rot');rot.textContent=RT[0];setInterval(()=>{ri=(ri+1)%4;rot.textContent=RT[ri]},2800);
+addEventListener('scroll',()=>{$('#pg').style.width=(scrollY/(document.documentElement.scrollHeight-innerHeight)*100)+'%'},{passive:true});
+const seen=new Set(LS.get('seen',[]));new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){seen.add(e.target.id);LS.set('seen',[...seen]);$$('#nav a').forEach(a=>a.classList.toggle('on',a.hash==='#'+e.target.id));const vis=SEC.filter(s=>document.body.dataset.mode==='gamer'||!s[2]);if(vis.every(s=>seen.has(s[0])))unlock('explore')}}),{threshold:.4}).observe&&$$('section').forEach(s=>new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){seen.add(s.id);LS.set('seen',[...seen]);$$('#nav a').forEach(a=>a.classList.toggle('on',a.hash==='#'+s.id));if(SEC.filter(x=>document.body.dataset.mode==='gamer'||!x[2]).every(x=>seen.has(x[0])))unlock('explore')}}),{threshold:.35}).observe(s));
+/* particles + cursor + tilt */
+(()=>{const c=$('#bg'),x=c.getContext('2d');let P=[];const rs=()=>{c.width=innerWidth;c.height=innerHeight;P=Array.from({length:Math.min(60,innerWidth/18|0)},()=>({x:Math.random()*c.width,y:Math.random()*c.height,v:.2+Math.random()*.5,r:Math.random()*1.8+.4}))};rs();addEventListener('resize',rs);(function f(){if(document.body.dataset.mode==='gamer'&&!RM){x.clearRect(0,0,c.width,c.height);x.fillStyle=getComputedStyle(document.body).getPropertyValue('--c');P.forEach(p=>{p.y-=p.v;if(p.y<0)p.y=c.height;x.globalAlpha=.5;x.beginPath();x.arc(p.x,p.y,p.r,0,7);x.fill()})}requestAnimationFrame(f)})();
+addEventListener('mousemove',e=>{const u=$('#cur');u.style.left=e.clientX+'px';u.style.top=e.clientY+'px';u.style.width=u.style.height=e.target.closest('a,button')?'34px':'18px';const d=$('.desk .card');if(d&&!RM)d.style.transform=`rotateY(${-14+(e.clientX/innerWidth-.5)*10}deg) rotateX(${6-(e.clientY/innerHeight-.5)*8}deg)`})})();
+/* tabs */
+const gt=[["Neon Snake"],["Code Typing"],["Memory Matrix"]];let cur=-1;
+const mk=(el,arr,cb,on=0)=>{el.innerHTML=arr.map((t,i)=>`<button class="btn${i===on?' on':''}">${t}</button>`).join('');$$('button',el).forEach((b,i)=>b.onclick=()=>{$$('button',el).forEach(x=>x.classList.remove('on'));b.classList.add('on');cb(i)})};
+function show(i){cur=i;$$('#gm>div').forEach((d,j)=>d.classList.toggle('on',j===i));$$('#tabs button').forEach((b,j)=>b.classList.toggle('on',j===i));stopSnake();clearInterval(T.iv);clearInterval(M.iv);if(i===1)T.init();if(i===2)M.init(M.lv)}
+
+/* SNAKE */
+let SN={run:0};const sc=$('#sn'),sx=sc.getContext('2d'),N=20,Z=15;
+function stopSnake(){SN.run=0;clearTimeout(SN.t)}
+function snakeStart(){unlock('first');SN={s:[[10,10],[9,10],[8,10]],d:[1,0],n:[1,0],f:[5,5],sc:0,run:1,sp:130};$('#ss').textContent=0;$('#sm').textContent='';$('#sh').textContent=LS.get('hi_snake',0);tick()}
+function tick(){if(!SN.run)return;const h=[SN.s[0][0]+SN.n[0],SN.s[0][1]+SN.n[1]];SN.d=SN.n;if(h[0]<0||h[1]<0||h[0]>=N||h[1]>=N||SN.s.some(p=>p[0]===h[0]&&p[1]===h[1])){SN.run=0;const hi=Math.max(LS.get('hi_snake',0),SN.sc);LS.set('hi_snake',hi);$('#sh').textContent=hi;$('#sm').textContent='GAME OVER — score '+SN.sc+'. Press Restart.';draw();return}SN.s.unshift(h);if(h[0]===SN.f[0]&&h[1]===SN.f[1]){SN.sc++;$('#ss').textContent=SN.sc;SN.sp=Math.max(55,SN.sp-4);do{SN.f=[Math.random()*N|0,Math.random()*N|0]}while(SN.s.some(p=>p[0]===SN.f[0]&&p[1]===SN.f[1]))}else SN.s.pop();draw();SN.t=setTimeout(tick,SN.sp)}
+function draw(){const a=getComputedStyle(document.body).getPropertyValue('--c');sx.clearRect(0,0,300,300);if(!SN.s)return;sx.shadowBlur=14;sx.shadowColor='#f0f';sx.fillStyle='#ff2bd6';sx.fillRect(SN.f[0]*Z+2,SN.f[1]*Z+2,Z-4,Z-4);sx.shadowColor=a;sx.fillStyle=a;SN.s.forEach(p=>sx.fillRect(p[0]*Z+1,p[1]*Z+1,Z-2,Z-2))}
+const dirs={u:[0,-1],d:[0,1],l:[-1,0],r:[1,0]};function steer(k){const v=dirs[k];if(SN.run&&v&&!(v[0]===-SN.d[0]&&v[1]===-SN.d[1]))SN.n=v}
+$$('[data-d]').forEach(b=>b.onclick=()=>steer(b.dataset.d));$('#sb').onclick=()=>{stopSnake();snakeStart()};
+let tsx,tsy;sc.addEventListener('touchstart',e=>{tsx=e.touches[0].clientX;tsy=e.touches[0].clientY},{passive:true});sc.addEventListener('touchend',e=>{const dx=e.changedTouches[0].clientX-tsx,dy=e.changedTouches[0].clientY-tsy;steer(Math.abs(dx)>Math.abs(dy)?(dx>0?'r':'l'):(dy>0?'d':'u'))});
+/* TYPING */
+const SN_={C:['for(int i=0;i<n;i++){sum+=a[i];}','int max(int a,int b){return a>b?a:b;}','while(p!=NULL){p=p->next;}'],Java:['for(int i=0;i<n;i++){sum+=a[i];}','public static int max(int a,int b){return a>b?a:b;}','List<String> xs=new ArrayList<>();'],Python:['def max_of(a,b): return a if a>b else b','squares=[x*x for x in range(10)]','with open("f.txt") as f: data=f.read()']};
+const T={lg:'C',du:30,init(){this.lg=this.lg||'C';this.reset()},reset(){clearInterval(this.iv);const s=SN_[this.lg];this.txt=[...s,...s].join(' ');this.t0=0;this.ty=0;this.ok=0;$('#tx').value='';$('#tx').disabled=false;$('#tr').textContent='';$('#tt1').textContent=this.du;$('#tw').textContent=0;$('#ta').textContent=100;$('#tbst').textContent=LS.get('best_'+this.lg+this.du,'–');this.render('')},
+render(v){$('#tt').innerHTML=[...this.txt].map((c,i)=>`<span class="${i<v.length?(v[i]===c?'ok':'bad'):i===v.length?'cur':''}">${c.replace('<','&lt;')}</span>`).join('')},
+stats(){const v=$('#tx').value,m=(Date.now()-this.t0)/60000||1e-9,okc=[...v].filter((c,i)=>c===this.txt[i]).length;$('#tw').textContent=Math.round(okc/5/m);$('#ta').textContent=this.ty?Math.round(this.ok/this.ty*100):100;$('#tt1').textContent=Math.max(0,this.du-Math.round((Date.now()-this.t0)/1000))},
+end(){clearInterval(this.iv);$('#tx').disabled=true;this.stats();const w=+$('#tw').textContent,k='best_'+this.lg+this.du,b=LS.get(k,0);if(w>b){LS.set(k,w);$('#tbst').textContent=w}$('#tr').textContent=`Done: ${w} WPM, ${$('#ta').textContent}% accuracy.`+(w>b?' New personal best!':'');unlock('type')}};
+$('#tx').addEventListener('input',e=>{const v=e.target.value;if(!T.t0){T.t0=Date.now();unlock('first');T.iv=setInterval(()=>{T.stats();if(Date.now()-T.t0>=T.du*1000)T.end()},250)}if(e.inputType==='insertText'){T.ty++;if(v.slice(-1)===T.txt[v.length-1])T.ok++}T.render(v);T.stats();if(v.length>=T.txt.length)T.end()});
+mk($('#tc'),['C','Java','Python','30s','60s'],i=>{if(i<3)T.lg=['C','Java','Python'][i];else T.du=i===3?30:60;T.reset()});$('#tc button:nth-child(4)').classList.add('on');$('#tc button:nth-child(1)').classList.add('on');$('#trs').onclick=()=>T.reset();
+/* MEMORY */
+const SY=["{}","</>","&&","++","[]","==","=>","#!","::","%","$_","//"],LV=[[4,4],[6,4],[10,5]];
+const M={lv:0,init(l){this.lv=l;clearInterval(this.iv);const n=LV[l][0],cols=LV[l][1];const c=[...SY.slice(0,n),...SY.slice(0,n)].sort(()=>Math.random()-.5);this.o=[];this.m=0;this.t=0;this.k=0;this.n=n;$('#mv').textContent=0;$('#mt').textContent=0;$('#mr').textContent='';$('#mb').textContent=LS.get('mem'+l,'–');const g=$('#mm');g.style.gridTemplateColumns=`repeat(${cols},1fr)`;g.innerHTML=c.map(s=>`<button class="mc" aria-label="Card"><div class="ci"><span>?</span><span>${s.replace('<','&lt;')}</span></div></button>`).join('');$$('.mc',g).forEach((b,i)=>b.onclick=()=>this.flip(b,c[i]))},
+flip(b,s){if(b.classList.contains('f')||b.classList.contains('d')||this.o.length>1)return;if(!this.k){this.k=1;unlock('first');this.iv=setInterval(()=>$('#mt').textContent=++this.t,1000)}b.classList.add('f');this.o.push([b,s]);if(this.o.length===2){$('#mv').textContent=++this.m;const[[a,x],[c,y]]=this.o;if(x===y){a.classList.replace('f','d');c.classList.replace('f','d');this.o=[];if($$('.mc.d').length===this.n*2)this.win()}else setTimeout(()=>{a.classList.remove('f');c.classList.remove('f');this.o=[]},700)}},
+win(){clearInterval(this.iv);const k='mem'+this.lv,b=LS.get(k,1e9);if(this.m<b){LS.set(k,this.m);$('#mb').textContent=this.m}$('#mr').textContent=`Victory! ${this.m} moves in ${this.t}s.`;unlock('mem')}};
+mk($('#mc'),['Easy','Medium','Hard'],i=>M.init(i));
+/* TERMINAL */
+const tm=$('#tm'),to=$('#to'),ti=$('#ti');let hist=[],hi=0,q=Promise.resolve();
+function say(t,c){q=q.then(async()=>{const d=document.createElement('div');if(c)d.style.color=c;to.append(d);if(RM){d.textContent=t}else for(const ch of t){d.textContent+=ch;await new Promise(r=>setTimeout(r,6))}to.scrollTop=to.scrollHeight})}
+const nav=(id,m)=>{if(m)setMode('gamer');setTimeout(()=>{go(id);tm.classList.remove('on')},500)};
+const CMD={help:()=>['Commands: help, about, skills, hackathons, projects, games, contact, clear, sudo hire daksh'],about:()=>['Daksh Minhas: 2nd-year B.Tech CSE student at MIT Bengaluru (MAHE). Into software development, problem solving, hackathons and emerging tech.'],skills:()=>['Languages: C, Java, Python'],hackathons:()=>['HackSprint','Smart India Hackathon'],projects:()=>{nav('projects');return['Navigating to projects…']},games:()=>{nav('arcade',1);return['Loading DAKSH ARCADE…']},contact:()=>[CFG.EMAIL?'Email: '+CFG.EMAIL:'Email: (not set yet, edit CFG)','GitHub: '+(CFG.GITHUB||'(not set yet)'),'LinkedIn: '+(CFG.LINKEDIN||'(not set yet)')],clear:()=>{to.innerHTML='';return[]},'sudo hire daksh':()=>{unlock('secret');return['[sudo] access granted.','Offer letter compiling… 100%','Great choice. Daksh is ready to ship code. 🚀']}};
+$('#tm form').onsubmit=e=>{e.preventDefault();const v=ti.value.trim().toLowerCase();ti.value='';if(!v)return;hist.push(v);hi=hist.length;say('$ '+v,'#22d3ee');(CMD[v]?CMD[v]():['Command not found: '+v+'. Try help.']).forEach(l=>say(l))};
+ti.onkeydown=e=>{if(e.key==='ArrowUp'&&hi>0)ti.value=hist[--hi];if(e.key==='ArrowDown')ti.value=hist[++hi]||'';if(e.key==='Escape')toggleT(0)};
+function toggleT(o){tm.classList.toggle('on',o);$('#tb').style.display=o?'none':'';if(o){ti.focus();if(!to.children.length)say('DAKSH.EXE terminal v1.0. Type help.')}}
+$('#tb').onclick=()=>toggleT(1);
+/* keys: terminal shortcut + konami */
+const KK=['ArrowUp','ArrowUp','ArrowDown','ArrowDown','ArrowLeft','ArrowRight','ArrowLeft','ArrowRight','b','a'];let ki=0;
+addEventListener('keydown',e=>{const t=e.target.tagName;if(document.body.dataset.mode==='gamer'&&((e.key==='`'&&t!=='INPUT'&&t!=='TEXTAREA')||(e.ctrlKey&&e.key==='k'))){e.preventDefault();toggleT(!tm.classList.contains('on'))}
+ki=(e.key===KK[ki]||e.key.toLowerCase()===KK[ki])?ki+1:(e.key===KK[0]?1:0);if(ki===KK.length){ki=0;document.body.classList.toggle('arcade');toast('Konami code! Arcade theme toggled.')}
+if(SN.run&&t!=='INPUT'){const m={ArrowUp:'u',w:'u',ArrowDown:'d',s:'d',ArrowLeft:'l',a:'l',ArrowRight:'r',d:'r'}[e.key];if(m){e.preventDefault();steer(m)}}
+else if(cur===0&&e.key===' '&&t!=='INPUT'&&t!=='BUTTON'&&$('#arcade').getBoundingClientRect().top<innerHeight/2){e.preventDefault();$('#sb').click()}});
+/* 404 hash */
+function chk(){const h=location.hash.slice(1);$('#go').style.display=h&&!SEC.some(s=>s[0]===h)?'grid':'none'}addEventListener('hashchange',chk);chk();
+/* boot */
+mk($('#tabs'),gt.map(g=>g[0]),show,-1);show(0);setMode(LS.get('mode','gamer'));badges();setTimeout(()=>{$('#ld').style.opacity=0;setTimeout(()=>$('#ld').remove(),500)},RM?100:1400);
+</script></body></html>
